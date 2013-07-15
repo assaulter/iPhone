@@ -21,6 +21,17 @@
 		A8652CE11793600000001705 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8652CDF1793600000001705 /* ViewController_iPad.xib */; };
 		A8652CE81793602600001705 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8652CE71793602600001705 /* AVFoundation.framework */; };
 		A8652CEB179374BF00001705 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A8652CEA179374BF00001705 /* logo.png */; };
+		A8652D3717939A5200001705 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8652D3517939A5200001705 /* ScrollViewController.m */; };
+		A8652D3817939A5200001705 /* ScrollViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8652D3617939A5200001705 /* ScrollViewController_iPhone.xib */; };
+		A8652D3C17939A7400001705 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8652D3A17939A7400001705 /* MyViewController.m */; };
+		A8652D3D17939A7400001705 /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8652D3B17939A7400001705 /* MyView.xib */; };
+		A8652D3F17939B4100001705 /* content_iPhone.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8652D3E17939B4100001705 /* content_iPhone.plist */; };
+		A8652D4717939B6200001705 /* small_five.png in Resources */ = {isa = PBXBuildFile; fileRef = A8652D4117939B6200001705 /* small_five.png */; };
+		A8652D4817939B6200001705 /* small_four.png in Resources */ = {isa = PBXBuildFile; fileRef = A8652D4217939B6200001705 /* small_four.png */; };
+		A8652D4917939B6200001705 /* small_one.png in Resources */ = {isa = PBXBuildFile; fileRef = A8652D4317939B6200001705 /* small_one.png */; };
+		A8652D4A17939B6200001705 /* small_six.png in Resources */ = {isa = PBXBuildFile; fileRef = A8652D4417939B6200001705 /* small_six.png */; };
+		A8652D4B17939B6200001705 /* small_three.png in Resources */ = {isa = PBXBuildFile; fileRef = A8652D4517939B6200001705 /* small_three.png */; };
+		A8652D4C17939B6200001705 /* small_two.png in Resources */ = {isa = PBXBuildFile; fileRef = A8652D4617939B6200001705 /* small_two.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +54,19 @@
 		A8652CE01793600000001705 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		A8652CE71793602600001705 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A8652CEA179374BF00001705 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		A8652D3417939A5100001705 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		A8652D3517939A5200001705 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		A8652D3617939A5200001705 /* ScrollViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollViewController_iPhone.xib; sourceTree = "<group>"; };
+		A8652D3917939A7400001705 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		A8652D3A17939A7400001705 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		A8652D3B17939A7400001705 /* MyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
+		A8652D3E17939B4100001705 /* content_iPhone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = content_iPhone.plist; sourceTree = "<group>"; };
+		A8652D4117939B6200001705 /* small_five.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_five.png; sourceTree = "<group>"; };
+		A8652D4217939B6200001705 /* small_four.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_four.png; sourceTree = "<group>"; };
+		A8652D4317939B6200001705 /* small_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_one.png; sourceTree = "<group>"; };
+		A8652D4417939B6200001705 /* small_six.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_six.png; sourceTree = "<group>"; };
+		A8652D4517939B6200001705 /* small_three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_three.png; sourceTree = "<group>"; };
+		A8652D4617939B6200001705 /* small_two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_two.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +118,12 @@
 				A8652CE91793744C00001705 /* Resources */,
 				A8652CD01793600000001705 /* AppDelegate.h */,
 				A8652CD11793600000001705 /* AppDelegate.m */,
+				A8652D3417939A5100001705 /* ScrollViewController.h */,
+				A8652D3517939A5200001705 /* ScrollViewController.m */,
+				A8652D3617939A5200001705 /* ScrollViewController_iPhone.xib */,
+				A8652D3917939A7400001705 /* MyViewController.h */,
+				A8652D3A17939A7400001705 /* MyViewController.m */,
+				A8652D3B17939A7400001705 /* MyView.xib */,
 				A8652CD91793600000001705 /* ViewController.h */,
 				A8652CDA1793600000001705 /* ViewController.m */,
 				A8652CDC1793600000001705 /* ViewController_iPhone.xib */,
@@ -120,9 +150,24 @@
 		A8652CE91793744C00001705 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A8652D4017939B4D00001705 /* smallImages */,
+				A8652D3E17939B4100001705 /* content_iPhone.plist */,
 				A8652CEA179374BF00001705 /* logo.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		A8652D4017939B4D00001705 /* smallImages */ = {
+			isa = PBXGroup;
+			children = (
+				A8652D4117939B6200001705 /* small_five.png */,
+				A8652D4217939B6200001705 /* small_four.png */,
+				A8652D4317939B6200001705 /* small_one.png */,
+				A8652D4417939B6200001705 /* small_six.png */,
+				A8652D4517939B6200001705 /* small_three.png */,
+				A8652D4617939B6200001705 /* small_two.png */,
+			);
+			name = smallImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +228,15 @@
 				A8652CDE1793600000001705 /* ViewController_iPhone.xib in Resources */,
 				A8652CE11793600000001705 /* ViewController_iPad.xib in Resources */,
 				A8652CEB179374BF00001705 /* logo.png in Resources */,
+				A8652D3817939A5200001705 /* ScrollViewController_iPhone.xib in Resources */,
+				A8652D3D17939A7400001705 /* MyView.xib in Resources */,
+				A8652D3F17939B4100001705 /* content_iPhone.plist in Resources */,
+				A8652D4717939B6200001705 /* small_five.png in Resources */,
+				A8652D4817939B6200001705 /* small_four.png in Resources */,
+				A8652D4917939B6200001705 /* small_one.png in Resources */,
+				A8652D4A17939B6200001705 /* small_six.png in Resources */,
+				A8652D4B17939B6200001705 /* small_three.png in Resources */,
+				A8652D4C17939B6200001705 /* small_two.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +250,8 @@
 				A8652CCE1793600000001705 /* main.m in Sources */,
 				A8652CD21793600000001705 /* AppDelegate.m in Sources */,
 				A8652CDB1793600000001705 /* ViewController.m in Sources */,
+				A8652D3717939A5200001705 /* ScrollViewController.m in Sources */,
+				A8652D3C17939A7400001705 /* MyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
