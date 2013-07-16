@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ScrollViewController.h"
 #import <AVFoundation/AVFoundation.h>
 
 @interface ViewController ()
@@ -15,6 +16,7 @@
 @property(nonatomic, strong) AVCaptureStillImageOutput *stillImageOutput;
 @property(nonatomic, strong) AVCaptureSession *session;
 @property(nonatomic, strong) IBOutlet UIView *previewView;
+@property(nonatomic, strong) ScrollViewController *scrollVC;
 
 @end
 
@@ -33,6 +35,10 @@
                                                                        action:@selector(takePhoto:)];
     toolbar.items = @[takePhotoButton];
     [self.view addSubview:toolbar];
+    
+    // create scrollviewcontroller
+    self.scrollVC = [[ScrollViewController alloc] initWithNibName:@"ScrollViewController_iPhone" bundle:nil];
+    [self.view addSubview:self.scrollVC.view];
     
     // 撮影開始
     [self setupAVCapture];
