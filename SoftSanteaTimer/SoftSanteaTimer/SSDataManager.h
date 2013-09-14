@@ -17,4 +17,5 @@
 
 +(SSDataManager *)sharedInstance;
 -(FixedDate *)insertFixedDate;
+-(void)save;
 @end

@@ -88,4 +88,11 @@ static SSDataManager *_sharedInstance = nil;
     return [result lastObject];
 }
 
+-(void)save {
+    NSError *error = nil;
+    if (![self.managedObjectContext save:&error]) {
+        NSLog(@"Save Error ,%@", error);
+    }
+}
+
 @end
