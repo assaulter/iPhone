@@ -26,6 +26,8 @@
 		A8616E1117E4BBA900DAAAAB /* FixedDate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8616E1017E4BBA900DAAAAB /* FixedDate.m */; };
 		A8616E1217E4BBA900DAAAAB /* FixedDate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8616E1017E4BBA900DAAAAB /* FixedDate.m */; };
 		A8616E1417E4BBEE00DAAAAB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8616E1317E4BBEE00DAAAAB /* CoreData.framework */; };
+		A8616E1717E4BFB200DAAAAB /* SSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8616E1617E4BFB200DAAAAB /* SSDataManager.m */; };
+		A8616E1817E4BFB200DAAAAB /* SSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8616E1617E4BFB200DAAAAB /* SSDataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		A8616E0F17E4BBA900DAAAAB /* FixedDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedDate.h; sourceTree = "<group>"; };
 		A8616E1017E4BBA900DAAAAB /* FixedDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedDate.m; sourceTree = "<group>"; };
 		A8616E1317E4BBEE00DAAAAB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A8616E1517E4BFB200DAAAAB /* SSDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataManager.h; sourceTree = "<group>"; };
+		A8616E1617E4BFB200DAAAAB /* SSDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 				A8616E0B17E4B9D500DAAAAB /* FixedDate.xcdatamodeld */,
 				A8616E0F17E4BBA900DAAAAB /* FixedDate.h */,
 				A8616E1017E4BBA900DAAAAB /* FixedDate.m */,
+				A8616E1517E4BFB200DAAAAB /* SSDataManager.h */,
+				A8616E1617E4BFB200DAAAAB /* SSDataManager.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 				A8616DEC17E4B9B800DAAAAB /* ViewController.m in Sources */,
 				A8616DE617E4B9B800DAAAAB /* AppDelegate.m in Sources */,
 				A8616DE217E4B9B800DAAAAB /* main.m in Sources */,
+				A8616E1717E4BFB200DAAAAB /* SSDataManager.m in Sources */,
 				A8616E1117E4BBA900DAAAAB /* FixedDate.m in Sources */,
 				A8616E0D17E4B9D500DAAAAB /* FixedDate.xcdatamodeld in Sources */,
 			);
@@ -284,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8616E1217E4BBA900DAAAAB /* FixedDate.m in Sources */,
+				A8616E1817E4BFB200DAAAAB /* SSDataManager.m in Sources */,
 				A8616E0117E4B9B800DAAAAB /* SoftSanteaTimerTests.m in Sources */,
 				A8616E0E17E4B9D500DAAAAB /* FixedDate.xcdatamodeld in Sources */,
 			);
@@ -407,6 +415,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SoftSanteaTimer/SoftSanteaTimer-Prefix.pch";
 				INFOPLIST_FILE = "SoftSanteaTimer/SoftSanteaTimer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -420,6 +429,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SoftSanteaTimer/SoftSanteaTimer-Prefix.pch";
 				INFOPLIST_FILE = "SoftSanteaTimer/SoftSanteaTimer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
