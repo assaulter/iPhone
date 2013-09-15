@@ -28,6 +28,8 @@
 		A8616E1417E4BBEE00DAAAAB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8616E1317E4BBEE00DAAAAB /* CoreData.framework */; };
 		A8616E1717E4BFB200DAAAAB /* SSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8616E1617E4BFB200DAAAAB /* SSDataManager.m */; };
 		A8616E1817E4BFB200DAAAAB /* SSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8616E1617E4BFB200DAAAAB /* SSDataManager.m */; };
+		A8616E1B17E5359600DAAAAB /* Memo.txt in Resources */ = {isa = PBXBuildFile; fileRef = A8616E1A17E5359600DAAAAB /* Memo.txt */; };
+		A8616E1C17E5359600DAAAAB /* Memo.txt in Resources */ = {isa = PBXBuildFile; fileRef = A8616E1A17E5359600DAAAAB /* Memo.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,7 @@
 		A8616E1317E4BBEE00DAAAAB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A8616E1517E4BFB200DAAAAB /* SSDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataManager.h; sourceTree = "<group>"; };
 		A8616E1617E4BFB200DAAAAB /* SSDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataManager.m; sourceTree = "<group>"; };
+		A8616E1A17E5359600DAAAAB /* Memo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Memo.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,7 @@
 		A8616DDB17E4B9B800DAAAAB /* SoftSanteaTimer */ = {
 			isa = PBXGroup;
 			children = (
+				A8616E1917E5357F00DAAAAB /* Text */,
 				A8616E0A17E4B9C100DAAAAB /* Model */,
 				A8616DE417E4B9B800DAAAAB /* AppDelegate.h */,
 				A8616DE517E4B9B800DAAAAB /* AppDelegate.m */,
@@ -178,6 +182,14 @@
 				A8616E1617E4BFB200DAAAAB /* SSDataManager.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		A8616E1917E5357F00DAAAAB /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				A8616E1A17E5359600DAAAAB /* Memo.txt */,
+			);
+			name = Text;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8616E1B17E5359600DAAAAB /* Memo.txt in Resources */,
 				A8616DEE17E4B9B800DAAAAB /* Images.xcassets in Resources */,
 				A8616DE017E4B9B800DAAAAB /* InfoPlist.strings in Resources */,
 				A8616DE917E4B9B800DAAAAB /* Main.storyboard in Resources */,
@@ -266,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8616E1C17E5359600DAAAAB /* Memo.txt in Resources */,
 				A8616DFF17E4B9B800DAAAAB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
