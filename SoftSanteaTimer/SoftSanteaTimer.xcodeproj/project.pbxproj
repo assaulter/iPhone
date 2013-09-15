@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3697FCD617E56CFD00A60172 /* RequestFormAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3697FCD517E56CFD00A60172 /* RequestFormAPIClient.m */; };
+		3697FCD717E56CFD00A60172 /* RequestFormAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3697FCD517E56CFD00A60172 /* RequestFormAPIClient.m */; };
 		A8616DD617E4B9B800DAAAAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8616DD517E4B9B800DAAAAB /* Foundation.framework */; };
 		A8616DD817E4B9B800DAAAAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8616DD717E4B9B800DAAAAB /* CoreGraphics.framework */; };
 		A8616DDA17E4B9B800DAAAAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8616DD917E4B9B800DAAAAB /* UIKit.framework */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3697FCD417E56CFD00A60172 /* RequestFormAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestFormAPIClient.h; sourceTree = "<group>"; };
+		3697FCD517E56CFD00A60172 /* RequestFormAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestFormAPIClient.m; sourceTree = "<group>"; };
 		A8616DD217E4B9B800DAAAAB /* SoftSanteaTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoftSanteaTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8616DD517E4B9B800DAAAAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A8616DD717E4B9B800DAAAAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -96,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3697FCD317E56CDB00A60172 /* WebAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				3697FCD417E56CFD00A60172 /* RequestFormAPIClient.h */,
+				3697FCD517E56CFD00A60172 /* RequestFormAPIClient.m */,
+			);
+			name = WebAPIClient;
+			sourceTree = "<group>";
+		};
 		A8616DC917E4B9B800DAAAAB = {
 			isa = PBXGroup;
 			children = (
@@ -130,8 +143,9 @@
 		A8616DDB17E4B9B800DAAAAB /* SoftSanteaTimer */ = {
 			isa = PBXGroup;
 			children = (
+				3697FCD317E56CDB00A60172 /* WebAPIClient */,
 				A8616E1917E5357F00DAAAAB /* Text */,
-				A8616E0A17E4B9C100DAAAAB /* Model */,
+				A8616E0A17E4B9C100DAAAAB /* CoreData */,
 				A8616DE417E4B9B800DAAAAB /* AppDelegate.h */,
 				A8616DE517E4B9B800DAAAAB /* AppDelegate.m */,
 				A8616DE717E4B9B800DAAAAB /* Main.storyboard */,
@@ -172,7 +186,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A8616E0A17E4B9C100DAAAAB /* Model */ = {
+		A8616E0A17E4B9C100DAAAAB /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
 				A8616E0B17E4B9D500DAAAAB /* FixedDate.xcdatamodeld */,
@@ -181,7 +195,7 @@
 				A8616E1517E4BFB200DAAAAB /* SSDataManager.h */,
 				A8616E1617E4BFB200DAAAAB /* SSDataManager.m */,
 			);
-			name = Model;
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 		A8616E1917E5357F00DAAAAB /* Text */ = {
@@ -293,6 +307,7 @@
 			files = (
 				A8616DEC17E4B9B800DAAAAB /* ViewController.m in Sources */,
 				A8616DE617E4B9B800DAAAAB /* AppDelegate.m in Sources */,
+				3697FCD617E56CFD00A60172 /* RequestFormAPIClient.m in Sources */,
 				A8616DE217E4B9B800DAAAAB /* main.m in Sources */,
 				A8616E1717E4BFB200DAAAAB /* SSDataManager.m in Sources */,
 				A8616E1117E4BBA900DAAAAB /* FixedDate.m in Sources */,
@@ -308,6 +323,7 @@
 				A8616E1817E4BFB200DAAAAB /* SSDataManager.m in Sources */,
 				A8616E0117E4B9B800DAAAAB /* SoftSanteaTimerTests.m in Sources */,
 				A8616E0E17E4B9D500DAAAAB /* FixedDate.xcdatamodeld in Sources */,
+				3697FCD717E56CFD00A60172 /* RequestFormAPIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +526,7 @@
 				A8616E0617E4B9B800DAAAAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8616E0717E4B9B800DAAAAB /* Build configuration list for PBXNativeTarget "SoftSanteaTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +535,7 @@
 				A8616E0917E4B9B800DAAAAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

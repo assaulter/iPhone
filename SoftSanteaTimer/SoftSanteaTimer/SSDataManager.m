@@ -8,15 +8,13 @@
 
 #import "SSDataManager.h"
 
-@interface SSDataManager() {
-    NSManagedObjectContext *_managedObjectContext;
-}
+@interface SSDataManager()
 
 @end
 
 @implementation SSDataManager
 
-@dynamic managedObjectContext;
+@synthesize managedObjectContext=_managedObjectContext;
 
 static SSDataManager *_sharedInstance = nil;
 +(SSDataManager *)sharedInstance {
