@@ -76,7 +76,7 @@
 #pragma mark - override getter
 -(NSString *)formUrl {
     if (!_formUrl) {
-        _formUrl = @"hogehoge";
+        _formUrl = @"https://script.google.com/macros/s/AKfycbwRwYlgbN2zfyrJ9BPwu19Wh7_P99DcwZ_xg8YCvz6IIUhmE7Rj/exec";
     }
 
     return _formUrl;
