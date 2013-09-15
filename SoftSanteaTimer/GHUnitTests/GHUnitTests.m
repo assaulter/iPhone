@@ -1,18 +1,18 @@
 //
-//  SoftSanteaTimerTests.m
-//  SoftSanteaTimerTests
+//  GHUnitTests.m
+//  GHUnitTests
 //
-//  Created by kubo_kazuki on 2013/09/15.
+//  Created by KazukiKubo on 2013/09/15.
 //  Copyright (c) 2013年 kubo_kazuki. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface SoftSanteaTimerTests : XCTestCase
+@interface GHUnitTests : XCTestCase
 
 @end
 
-@implementation SoftSanteaTimerTests
+@implementation GHUnitTests
 
 - (void)setUp
 {

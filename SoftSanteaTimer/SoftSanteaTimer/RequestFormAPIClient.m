@@ -31,6 +31,7 @@
     NSString *params = [self createParamsWithData:dict];
     
     NSString *urlstr = [NSString stringWithFormat:@"%@?%@", self.formUrl, params];
+    
     NSURL *url = [NSURL URLWithString:urlstr];
     NSMutableURLRequest *request = [self createRequestFromUrl:url];
     
@@ -93,7 +94,7 @@
 
 -(NSString *)currentVersion {
     if (!_currentVersion) {
-        _currentVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVewsionString"];
+        _currentVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     }
     
     return _currentVersion;
