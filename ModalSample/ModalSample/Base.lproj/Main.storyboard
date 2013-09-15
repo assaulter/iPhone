@@ -33,10 +33,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Modal View Controller - ModalViewController-->
         <scene sceneID="lOX-EX-xOa">
             <objects>
-                <viewController id="JON-Ah-8CM" sceneMemberID="viewController">
+                <viewController title="ModalViewController" id="JON-Ah-8CM" customClass="ModalViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lRM-hC-rwa"/>
                         <viewControllerLayoutGuide type="bottom" id="MxY-Pa-kDu"/>
@@ -44,12 +44,24 @@
                     <view key="view" contentMode="scaleToFill" id="Uyc-HY-skz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVP-a6-bzf">
+                                <rect key="frame" x="137" y="381" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="close">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedCloseButton:" destination="JON-Ah-8CM" eventType="touchUpInside" id="wQ9-AX-63I"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oiS-A2-4qV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="882" y="152"/>
+            <point key="canvasLocation" x="1228" y="128"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
