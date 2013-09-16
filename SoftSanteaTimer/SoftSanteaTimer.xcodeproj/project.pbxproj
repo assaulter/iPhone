@@ -22,6 +22,12 @@
 		36B55EC817E5A2C800B614CD /* RequestFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B55EC517E5A2C800B614CD /* RequestFormViewController.m */; };
 		36D520A617E6BE8700F1D664 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D520A517E6BE8700F1D664 /* GuideViewController.m */; };
 		36D520A717E6BE8700F1D664 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D520A517E6BE8700F1D664 /* GuideViewController.m */; };
+		36D520F117E701F600F1D664 /* PageContent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36D520EF17E701F600F1D664 /* PageContent.xcdatamodeld */; };
+		36D520F217E701F600F1D664 /* PageContent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36D520EF17E701F600F1D664 /* PageContent.xcdatamodeld */; };
+		36D5210117E7039200F1D664 /* PageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D5210017E7039200F1D664 /* PageContent.m */; };
+		36D5210217E7039200F1D664 /* PageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D5210017E7039200F1D664 /* PageContent.m */; };
+		36D5210517E703F100F1D664 /* PageContentDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D5210417E703F100F1D664 /* PageContentDataManager.m */; };
+		36D5210617E703F100F1D664 /* PageContentDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D5210417E703F100F1D664 /* PageContentDataManager.m */; };
 		6027CAE9459A408DB731AFE2 /* libPods-GHUnit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6FF905B8204C5C93BA0300 /* libPods-GHUnit.a */; };
 		A8616DD617E4B9B800DAAAAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8616DD517E4B9B800DAAAAB /* Foundation.framework */; };
 		A8616DD817E4B9B800DAAAAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8616DD717E4B9B800DAAAAB /* CoreGraphics.framework */; };
@@ -56,6 +62,11 @@
 		36B55EC517E5A2C800B614CD /* RequestFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestFormViewController.m; sourceTree = "<group>"; };
 		36D520A417E6BE8700F1D664 /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
 		36D520A517E6BE8700F1D664 /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
+		36D520F017E701F600F1D664 /* PageContent.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PageContent.xcdatamodel; sourceTree = "<group>"; };
+		36D520FF17E7039200F1D664 /* PageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContent.h; sourceTree = "<group>"; };
+		36D5210017E7039200F1D664 /* PageContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContent.m; sourceTree = "<group>"; };
+		36D5210317E703F100F1D664 /* PageContentDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentDataManager.h; sourceTree = "<group>"; };
+		36D5210417E703F100F1D664 /* PageContentDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentDataManager.m; sourceTree = "<group>"; };
 		4C73A40FA2AC4A849928D9E8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		4F3C550506F84FB382A0F5DC /* libPods-SoftSanteaTimerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SoftSanteaTimerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FAD1F5080F64765B00D89A0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,6 +240,11 @@
 				A8616E1017E4BBA900DAAAAB /* FixedDate.m */,
 				A8616E1517E4BFB200DAAAAB /* SSDataManager.h */,
 				A8616E1617E4BFB200DAAAAB /* SSDataManager.m */,
+				36D520EF17E701F600F1D664 /* PageContent.xcdatamodeld */,
+				36D520FF17E7039200F1D664 /* PageContent.h */,
+				36D5210017E7039200F1D664 /* PageContent.m */,
+				36D5210317E703F100F1D664 /* PageContentDataManager.h */,
+				36D5210417E703F100F1D664 /* PageContentDataManager.m */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -404,8 +420,11 @@
 				36D520A717E6BE8700F1D664 /* GuideViewController.m in Sources */,
 				3623425F17E5919000460B56 /* AppDelegate.m in Sources */,
 				3623425D17E5906200460B56 /* RequestFormClientTest.m in Sources */,
+				36D520F217E701F600F1D664 /* PageContent.xcdatamodeld in Sources */,
 				3623425E17E5918D00460B56 /* RequestFormAPIClient.m in Sources */,
+				36D5210217E7039200F1D664 /* PageContent.m in Sources */,
 				3623423A17E58E7D00460B56 /* main.m in Sources */,
+				36D5210617E703F100F1D664 /* PageContentDataManager.m in Sources */,
 				3623426017E5919400460B56 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,8 +433,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36D5210517E703F100F1D664 /* PageContentDataManager.m in Sources */,
+				36D5210117E7039200F1D664 /* PageContent.m in Sources */,
 				A8616DEC17E4B9B800DAAAAB /* ViewController.m in Sources */,
 				A8616DE617E4B9B800DAAAAB /* AppDelegate.m in Sources */,
+				36D520F117E701F600F1D664 /* PageContent.xcdatamodeld in Sources */,
 				36B55EC717E5A2C800B614CD /* RequestFormViewController.m in Sources */,
 				3697FCD617E56CFD00A60172 /* RequestFormAPIClient.m in Sources */,
 				A8616DE217E4B9B800DAAAAB /* main.m in Sources */,
@@ -627,6 +649,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		36D520EF17E701F600F1D664 /* PageContent.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				36D520F017E701F600F1D664 /* PageContent.xcdatamodel */,
+			);
+			currentVersion = 36D520F017E701F600F1D664 /* PageContent.xcdatamodel */;
+			path = PageContent.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		A8616E0B17E4B9D500DAAAAB /* FixedDate.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
