@@ -27,4 +27,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)pressedButton:(id)sender {
+    // 初回起動時のみguideViewに遷移する。
+    [self performSegueWithIdentifier:@"goToGuide" sender:self];
+}
+
 @end
