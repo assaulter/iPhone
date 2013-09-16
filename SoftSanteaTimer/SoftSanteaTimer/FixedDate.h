@@ -2,7 +2,7 @@
 //  FixedDate.h
 //  SoftSanteaTimer
 //
-//  Created by kubo_kazuki on 2013/09/15.
+//  Created by KazukiKubo on 2013/09/16.
 //  Copyright (c) 2013年 kubo_kazuki. All rights reserved.
 //
 

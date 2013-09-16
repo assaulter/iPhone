@@ -1,17 +1,13 @@
 //
-//  FixedDate.m
+//  SSDataManagerTest.h
 //  SoftSanteaTimer
 //
 //  Created by KazukiKubo on 2013/09/16.
 //  Copyright (c) 2013年 kubo_kazuki. All rights reserved.
 //
 
-#import "FixedDate.h"
+#import "GHTestCase.h"
 
-
-@implementation FixedDate
-
-@dynamic identifier;
-@dynamic fixedDate;
+@interface SSDataManagerTest : GHTestCase
 
 @end

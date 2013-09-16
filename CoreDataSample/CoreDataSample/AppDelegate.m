@@ -1,75 +1,73 @@
 //
-//  SSDataManager.m
-//  SoftSanteaTimer
+//  AppDelegate.m
+//  CoreDataSample
 //
-//  Created by kubo_kazuki on 2013/09/15.
-//  Copyright (c) 2013年 kubo_kazuki. All rights reserved.
+//  Created by KazukiKubo on 2013/09/16.
+//  Copyright (c) 2013年 KazukiKubo. All rights reserved.
 //
 
-#import "SSDataManager.h"
+#import "AppDelegate.h"
 
-@interface SSDataManager() {
-    NSManagedObjectContext *_managedObjectContext;
-    NSPersistentStoreCoordinator *_persistentStoreCoordinator;
-    NSManagedObjectModel *_managedObjectModel;
+#import "MasterViewController.h"
+
+@implementation AppDelegate
+
+@synthesize managedObjectContext = _managedObjectContext;
+@synthesize managedObjectModel = _managedObjectModel;
+@synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // Override point for customization after application launch.
+    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
+    controller.managedObjectContext = self.managedObjectContext;
+    return YES;
+}
+							
+- (void)applicationWillResignActive:(UIApplication *)application
+{
+    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
 
-@property(nonatomic, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-@property(nonatomic, readonly) NSManagedObjectModel *managedObjectModel;
-
-@end
-
-@implementation SSDataManager
-
-@dynamic managedObjectContext, persistentStoreCoordinator, managedObjectModel;
-
-static SSDataManager *_sharedInstance = nil;
-+(SSDataManager *)sharedInstance {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _sharedInstance = [SSDataManager new];
-    });
-    
-    return _sharedInstance;
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
--(FixedDate *)insertFixedDate {
-    FixedDate *fixedDate = [NSEntityDescription insertNewObjectForEntityForName:@"FixedDate" inManagedObjectContext:self.managedObjectContext];
-    
-    // add identifier
-    CFUUIDRef uuid = CFUUIDCreate(NULL);
-    NSString *identifier = CFBridgingRelease(CFUUIDCreateString(NULL, uuid));
-    fixedDate.identifier = identifier;
-    
-    return fixedDate;
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
+    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
--(FixedDate *)fixedDate {
-    // dateが最も新しいものを取得する(仕様上、完了したら削除するので0 or 1のはず・・・)
-    
-    NSFetchRequest *request = [NSFetchRequest new];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"FixedDate" inManagedObjectContext:self.managedObjectContext];
-    [request setEntity:entity];
-    
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application
+{
+    // Saves changes in the application's managed object context before the application terminates.
+    [self saveContext];
+}
+
+- (void)saveContext
+{
     NSError *error = nil;
-    NSArray *result = [self.managedObjectContext executeFetchRequest:request error:&error];
-    if (!result) {
-        NSLog(@"executeFetchRequest: failed, %@", [error localizedDescription]);
-        
-        return nil;
-    }
-    
-    return [result lastObject];
-}
-
--(void)save {
-    NSError *error = nil;
-    if (![self.managedObjectContext save:&error]) {
-        NSLog(@"Save Error ,%@", error);
+    NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
+    if (managedObjectContext != nil) {
+        if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
+             // Replace this implementation with code to handle the error appropriately.
+             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
+            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+            abort();
+        } 
     }
 }
 
-#pragma mark - Core Data Stack
+#pragma mark - Core Data stack
 
 // Returns the managed object context for the application.
 // If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
@@ -94,7 +92,7 @@ static SSDataManager *_sharedInstance = nil;
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"FixedDateModel" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"CoreDataSample" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
@@ -115,7 +113,7 @@ static SSDataManager *_sharedInstance = nil;
         /*
          Replace this implementation with code to handle the error appropriately.
          
-         abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+         abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
          
          Typical reasons for an error here include:
          * The persistent store is not accessible;
@@ -137,12 +135,13 @@ static SSDataManager *_sharedInstance = nil;
          */
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
-    }
+    }    
     
     return _persistentStoreCoordinator;
 }
 
 #pragma mark - Application's Documents directory
+
 // Returns the URL to the application's Documents directory.
 - (NSURL *)applicationDocumentsDirectory
 {
