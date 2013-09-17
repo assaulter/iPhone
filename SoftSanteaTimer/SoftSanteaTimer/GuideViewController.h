@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GuideViewController : UIViewController
+@interface GuideViewController : UIViewController<UIPageViewControllerDelegate>
+
+@property(nonatomic, strong) UIPageViewController *pageViewController;
 
 @end

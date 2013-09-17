@@ -17,6 +17,10 @@
 		3623425E17E5918D00460B56 /* RequestFormAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3697FCD517E56CFD00A60172 /* RequestFormAPIClient.m */; };
 		3623425F17E5919000460B56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8616DE517E4B9B800DAAAAB /* AppDelegate.m */; };
 		3623426017E5919400460B56 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8616DEB17E4B9B800DAAAAB /* ViewController.m */; };
+		3691D39617E897FA00F40553 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3691D39517E897FA00F40553 /* ContentViewController.m */; };
+		3691D39717E897FA00F40553 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3691D39517E897FA00F40553 /* ContentViewController.m */; };
+		3691D39A17E8987E00F40553 /* GuideModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3691D39917E8987E00F40553 /* GuideModelController.m */; };
+		3691D39B17E8987E00F40553 /* GuideModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3691D39917E8987E00F40553 /* GuideModelController.m */; };
 		3697FCD617E56CFD00A60172 /* RequestFormAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3697FCD517E56CFD00A60172 /* RequestFormAPIClient.m */; };
 		36B55EC717E5A2C800B614CD /* RequestFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B55EC517E5A2C800B614CD /* RequestFormViewController.m */; };
 		36B55EC817E5A2C800B614CD /* RequestFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B55EC517E5A2C800B614CD /* RequestFormViewController.m */; };
@@ -30,10 +34,14 @@
 		36D5210817E70A1600F1D664 /* PageContentIntialData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36D5210717E70A1600F1D664 /* PageContentIntialData.plist */; };
 		36D5210917E70A1600F1D664 /* PageContentIntialData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36D5210717E70A1600F1D664 /* PageContentIntialData.plist */; };
 		36D5211117E70E0B00F1D664 /* PageContentDataManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D5210F17E70E0B00F1D664 /* PageContentDataManagerTest.m */; };
-		36D5211417E7272000F1D664 /* SSDataManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D5211317E7272000F1D664 /* SSDataManagerTest.m */; };
-		36D5211517E727AA00F1D664 /* SSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8616E1617E4BFB200DAAAAB /* SSDataManager.m */; };
-		36D5216817E73CBB00F1D664 /* FixedDateModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36D5216617E73CBB00F1D664 /* FixedDateModel.xcdatamodeld */; };
-		36D5216B17E73CF500F1D664 /* FixedDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D5216A17E73CF500F1D664 /* FixedDate.m */; };
+		36D5216F17E7D25900F1D664 /* PageContent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36D520EF17E701F600F1D664 /* PageContent.xcdatamodeld */; };
+		36D5217217E7D5A900F1D664 /* FixedDate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36D5217017E7D5A900F1D664 /* FixedDate.xcdatamodeld */; };
+		36D5217317E7D5A900F1D664 /* FixedDate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36D5217017E7D5A900F1D664 /* FixedDate.xcdatamodeld */; };
+		36D5217A17E7D64A00F1D664 /* FixedDateDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D5217917E7D64A00F1D664 /* FixedDateDataManager.m */; };
+		36D5217B17E7D64A00F1D664 /* FixedDateDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D5217917E7D64A00F1D664 /* FixedDateDataManager.m */; };
+		36D5217E17E7D6E100F1D664 /* FixedDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D5217D17E7D6E100F1D664 /* FixedDate.m */; };
+		36D5217F17E7D6E100F1D664 /* FixedDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D5217D17E7D6E100F1D664 /* FixedDate.m */; };
+		36D5218217E7DA0900F1D664 /* FixedDateDataManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D5218117E7DA0900F1D664 /* FixedDateDataManagerTest.m */; };
 		6027CAE9459A408DB731AFE2 /* libPods-GHUnit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6FF905B8204C5C93BA0300 /* libPods-GHUnit.a */; };
 		A8616DD617E4B9B800DAAAAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8616DD517E4B9B800DAAAAB /* Foundation.framework */; };
 		A8616DD817E4B9B800DAAAAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8616DD717E4B9B800DAAAAB /* CoreGraphics.framework */; };
@@ -45,7 +53,6 @@
 		A8616DEC17E4B9B800DAAAAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8616DEB17E4B9B800DAAAAB /* ViewController.m */; };
 		A8616DEE17E4B9B800DAAAAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8616DED17E4B9B800DAAAAB /* Images.xcassets */; };
 		A8616E1417E4BBEE00DAAAAB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8616E1317E4BBEE00DAAAAB /* CoreData.framework */; };
-		A8616E1717E4BFB200DAAAAB /* SSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8616E1617E4BFB200DAAAAB /* SSDataManager.m */; };
 		A8616E1B17E5359600DAAAAB /* Memo.txt in Resources */ = {isa = PBXBuildFile; fileRef = A8616E1A17E5359600DAAAAB /* Memo.txt */; };
 		EE1CF7277CC948DE9088D7ED /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAD1F5080F64765B00D89A0 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -60,6 +67,10 @@
 		3623425917E58F3F00460B56 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3623425B17E5906200460B56 /* RequestFormClientTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestFormClientTest.h; sourceTree = "<group>"; };
 		3623425C17E5906200460B56 /* RequestFormClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestFormClientTest.m; sourceTree = "<group>"; };
+		3691D39417E897FA00F40553 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		3691D39517E897FA00F40553 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		3691D39817E8987E00F40553 /* GuideModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideModelController.h; sourceTree = "<group>"; };
+		3691D39917E8987E00F40553 /* GuideModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideModelController.m; sourceTree = "<group>"; };
 		3697FCD417E56CFD00A60172 /* RequestFormAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestFormAPIClient.h; sourceTree = "<group>"; };
 		3697FCD517E56CFD00A60172 /* RequestFormAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestFormAPIClient.m; sourceTree = "<group>"; };
 		36B55EC417E5A2C800B614CD /* RequestFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestFormViewController.h; sourceTree = "<group>"; };
@@ -74,11 +85,13 @@
 		36D5210717E70A1600F1D664 /* PageContentIntialData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PageContentIntialData.plist; sourceTree = "<group>"; };
 		36D5210E17E70E0B00F1D664 /* PageContentDataManagerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentDataManagerTest.h; sourceTree = "<group>"; };
 		36D5210F17E70E0B00F1D664 /* PageContentDataManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentDataManagerTest.m; sourceTree = "<group>"; };
-		36D5211217E7272000F1D664 /* SSDataManagerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataManagerTest.h; sourceTree = "<group>"; };
-		36D5211317E7272000F1D664 /* SSDataManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataManagerTest.m; sourceTree = "<group>"; };
-		36D5216717E73CBB00F1D664 /* FixedDateModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FixedDateModel.xcdatamodel; sourceTree = "<group>"; };
-		36D5216917E73CF500F1D664 /* FixedDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedDate.h; sourceTree = "<group>"; };
-		36D5216A17E73CF500F1D664 /* FixedDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedDate.m; sourceTree = "<group>"; };
+		36D5217117E7D5A900F1D664 /* FixedDate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FixedDate.xcdatamodel; sourceTree = "<group>"; };
+		36D5217817E7D64A00F1D664 /* FixedDateDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedDateDataManager.h; sourceTree = "<group>"; };
+		36D5217917E7D64A00F1D664 /* FixedDateDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedDateDataManager.m; sourceTree = "<group>"; };
+		36D5217C17E7D6E100F1D664 /* FixedDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedDate.h; sourceTree = "<group>"; };
+		36D5217D17E7D6E100F1D664 /* FixedDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedDate.m; sourceTree = "<group>"; };
+		36D5218017E7DA0900F1D664 /* FixedDateDataManagerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedDateDataManagerTest.h; sourceTree = "<group>"; };
+		36D5218117E7DA0900F1D664 /* FixedDateDataManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedDateDataManagerTest.m; sourceTree = "<group>"; };
 		4C73A40FA2AC4A849928D9E8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		4F3C550506F84FB382A0F5DC /* libPods-SoftSanteaTimerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SoftSanteaTimerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FAD1F5080F64765B00D89A0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,8 +112,6 @@
 		A8616DED17E4B9B800DAAAAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A8616DF417E4B9B800DAAAAB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A8616E1317E4BBEE00DAAAAB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		A8616E1517E4BFB200DAAAAB /* SSDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataManager.h; sourceTree = "<group>"; };
-		A8616E1617E4BFB200DAAAAB /* SSDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataManager.m; sourceTree = "<group>"; };
 		A8616E1A17E5359600DAAAAB /* Memo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Memo.txt; sourceTree = "<group>"; };
 		FC6FF905B8204C5C93BA0300 /* libPods-GHUnit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GHUnit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,8 +153,8 @@
 				3623425C17E5906200460B56 /* RequestFormClientTest.m */,
 				36D5210E17E70E0B00F1D664 /* PageContentDataManagerTest.h */,
 				36D5210F17E70E0B00F1D664 /* PageContentDataManagerTest.m */,
-				36D5211217E7272000F1D664 /* SSDataManagerTest.h */,
-				36D5211317E7272000F1D664 /* SSDataManagerTest.m */,
+				36D5218017E7DA0900F1D664 /* FixedDateDataManagerTest.h */,
+				36D5218117E7DA0900F1D664 /* FixedDateDataManagerTest.m */,
 			);
 			path = GHUnit;
 			sourceTree = "<group>";
@@ -174,6 +185,10 @@
 			children = (
 				36D520A417E6BE8700F1D664 /* GuideViewController.h */,
 				36D520A517E6BE8700F1D664 /* GuideViewController.m */,
+				3691D39417E897FA00F40553 /* ContentViewController.h */,
+				3691D39517E897FA00F40553 /* ContentViewController.m */,
+				3691D39817E8987E00F40553 /* GuideModelController.h */,
+				3691D39917E8987E00F40553 /* GuideModelController.m */,
 			);
 			name = Guide;
 			sourceTree = "<group>";
@@ -249,16 +264,16 @@
 		A8616E0A17E4B9C100DAAAAB /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				A8616E1517E4BFB200DAAAAB /* SSDataManager.h */,
-				A8616E1617E4BFB200DAAAAB /* SSDataManager.m */,
 				36D520EF17E701F600F1D664 /* PageContent.xcdatamodeld */,
 				36D520FF17E7039200F1D664 /* PageContent.h */,
 				36D5210017E7039200F1D664 /* PageContent.m */,
 				36D5210317E703F100F1D664 /* PageContentDataManager.h */,
 				36D5210417E703F100F1D664 /* PageContentDataManager.m */,
-				36D5216617E73CBB00F1D664 /* FixedDateModel.xcdatamodeld */,
-				36D5216917E73CF500F1D664 /* FixedDate.h */,
-				36D5216A17E73CF500F1D664 /* FixedDate.m */,
+				36D5217017E7D5A900F1D664 /* FixedDate.xcdatamodeld */,
+				36D5217817E7D64A00F1D664 /* FixedDateDataManager.h */,
+				36D5217917E7D64A00F1D664 /* FixedDateDataManager.m */,
+				36D5217C17E7D6E100F1D664 /* FixedDate.h */,
+				36D5217D17E7D6E100F1D664 /* FixedDate.m */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -432,16 +447,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36D5217317E7D5A900F1D664 /* FixedDate.xcdatamodeld in Sources */,
 				36B55EC817E5A2C800B614CD /* RequestFormViewController.m in Sources */,
+				36D5218217E7DA0900F1D664 /* FixedDateDataManagerTest.m in Sources */,
 				36D520A717E6BE8700F1D664 /* GuideViewController.m in Sources */,
 				3623425F17E5919000460B56 /* AppDelegate.m in Sources */,
+				36D5216F17E7D25900F1D664 /* PageContent.xcdatamodeld in Sources */,
 				3623425D17E5906200460B56 /* RequestFormClientTest.m in Sources */,
-				36D5211517E727AA00F1D664 /* SSDataManager.m in Sources */,
 				3623425E17E5918D00460B56 /* RequestFormAPIClient.m in Sources */,
 				36D5210217E7039200F1D664 /* PageContent.m in Sources */,
 				3623423A17E58E7D00460B56 /* main.m in Sources */,
 				36D5211117E70E0B00F1D664 /* PageContentDataManagerTest.m in Sources */,
-				36D5211417E7272000F1D664 /* SSDataManagerTest.m in Sources */,
+				36D5217F17E7D6E100F1D664 /* FixedDate.m in Sources */,
+				3691D39717E897FA00F40553 /* ContentViewController.m in Sources */,
+				36D5217B17E7D64A00F1D664 /* FixedDateDataManager.m in Sources */,
+				3691D39B17E8987E00F40553 /* GuideModelController.m in Sources */,
 				36D5210617E703F100F1D664 /* PageContentDataManager.m in Sources */,
 				3623426017E5919400460B56 /* ViewController.m in Sources */,
 			);
@@ -451,18 +471,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36D5216B17E73CF500F1D664 /* FixedDate.m in Sources */,
+				36D5217E17E7D6E100F1D664 /* FixedDate.m in Sources */,
 				36D5210517E703F100F1D664 /* PageContentDataManager.m in Sources */,
 				36D5210117E7039200F1D664 /* PageContent.m in Sources */,
 				A8616DEC17E4B9B800DAAAAB /* ViewController.m in Sources */,
+				3691D39617E897FA00F40553 /* ContentViewController.m in Sources */,
+				36D5217A17E7D64A00F1D664 /* FixedDateDataManager.m in Sources */,
+				36D5217217E7D5A900F1D664 /* FixedDate.xcdatamodeld in Sources */,
 				A8616DE617E4B9B800DAAAAB /* AppDelegate.m in Sources */,
 				36D520F117E701F600F1D664 /* PageContent.xcdatamodeld in Sources */,
 				36B55EC717E5A2C800B614CD /* RequestFormViewController.m in Sources */,
 				3697FCD617E56CFD00A60172 /* RequestFormAPIClient.m in Sources */,
 				A8616DE217E4B9B800DAAAAB /* main.m in Sources */,
-				A8616E1717E4BFB200DAAAAB /* SSDataManager.m in Sources */,
+				3691D39A17E8987E00F40553 /* GuideModelController.m in Sources */,
 				36D520A617E6BE8700F1D664 /* GuideViewController.m in Sources */,
-				36D5216817E73CBB00F1D664 /* FixedDateModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,13 +699,13 @@
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
-		36D5216617E73CBB00F1D664 /* FixedDateModel.xcdatamodeld */ = {
+		36D5217017E7D5A900F1D664 /* FixedDate.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				36D5216717E73CBB00F1D664 /* FixedDateModel.xcdatamodel */,
+				36D5217117E7D5A900F1D664 /* FixedDate.xcdatamodel */,
 			);
-			currentVersion = 36D5216717E73CBB00F1D664 /* FixedDateModel.xcdatamodel */;
-			path = FixedDateModel.xcdatamodeld;
+			currentVersion = 36D5217117E7D5A900F1D664 /* FixedDate.xcdatamodel */;
+			path = FixedDate.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

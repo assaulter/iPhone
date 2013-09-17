@@ -7,6 +7,6 @@
         <attribute name="pageNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
     <elements>
-        <element name="PageContent" positionX="160" positionY="192" width="128" height="103"/>
+        <element name="PageContent" positionX="-108" positionY="257" width="128" height="103"/>
     </elements>
 </model>

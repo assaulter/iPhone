@@ -2,7 +2,7 @@
 //  FixedDate.h
 //  SoftSanteaTimer
 //
-//  Created by KazukiKubo on 2013/09/16.
+//  Created by KazukiKubo on 2013/09/17.
 //  Copyright (c) 2013年 kubo_kazuki. All rights reserved.
 //
 
@@ -12,7 +12,7 @@
 
 @interface FixedDate : NSManagedObject
 
-@property (nonatomic, retain) NSString * identifier;
 @property (nonatomic, retain) NSDate * fixedDate;
+@property (nonatomic, retain) NSString * identifier;
 
 @end

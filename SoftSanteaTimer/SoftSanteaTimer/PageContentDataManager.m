@@ -14,14 +14,13 @@
     NSManagedObjectModel *_managedObjectModel;
 }
 
-@property(nonatomic, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property(nonatomic, readonly) NSManagedObjectModel *managedObjectModel;
 
 @end
 
 @implementation PageContentDataManager
 
-@dynamic managedObjectContext, persistentStoreCoordinator, managedObjectModel;
+@dynamic managedObjectContext, managedObjectModel;
 
 static PageContentDataManager *_sharedInstance = nil;
 +(PageContentDataManager *)sharedInstance {
@@ -33,6 +32,7 @@ static PageContentDataManager *_sharedInstance = nil;
     return _sharedInstance;
 }
 
+#pragma mark - PageContent API
 -(NSArray *)pageContents {
     NSFetchRequest *request = [NSFetchRequest new];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"PageContent" inManagedObjectContext:self.managedObjectContext];

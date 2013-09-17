@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "PageContentDataManager.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    PageContentDataManager *_manager;
+}
 
 @end
 
@@ -19,6 +22,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.title = @"TopView";
+    _manager = [PageContentDataManager sharedInstance];
+    NSManagedObjectContext *context = _manager.managedObjectContext;
 }
 
 - (void)didReceiveMemoryWarning

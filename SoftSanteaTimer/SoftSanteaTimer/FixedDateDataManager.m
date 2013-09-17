@@ -1,33 +1,32 @@
 //
-//  SSDataManager.m
+//  FixedDateDataManager.m
 //  SoftSanteaTimer
 //
-//  Created by kubo_kazuki on 2013/09/15.
+//  Created by KazukiKubo on 2013/09/17.
 //  Copyright (c) 2013年 kubo_kazuki. All rights reserved.
 //
 
-#import "SSDataManager.h"
+#import "FixedDateDataManager.h"
 
-@interface SSDataManager() {
+@interface FixedDateDataManager() {
     NSManagedObjectContext *_managedObjectContext;
     NSPersistentStoreCoordinator *_persistentStoreCoordinator;
     NSManagedObjectModel *_managedObjectModel;
 }
 
-@property(nonatomic, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property(nonatomic, readonly) NSManagedObjectModel *managedObjectModel;
 
 @end
 
-@implementation SSDataManager
+@implementation FixedDateDataManager
 
-@dynamic managedObjectContext, persistentStoreCoordinator, managedObjectModel;
+@dynamic managedObjectContext, managedObjectModel;
 
-static SSDataManager *_sharedInstance = nil;
-+(SSDataManager *)sharedInstance {
+static FixedDateDataManager *_sharedInstance=nil;
++(FixedDateDataManager *)sharedInstance {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedInstance = [SSDataManager new];
+        _sharedInstance = [FixedDateDataManager new];
     });
     
     return _sharedInstance;
@@ -46,7 +45,6 @@ static SSDataManager *_sharedInstance = nil;
 
 -(FixedDate *)fixedDate {
     // dateが最も新しいものを取得する(仕様上、完了したら削除するので0 or 1のはず・・・)
-    
     NSFetchRequest *request = [NSFetchRequest new];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"FixedDate" inManagedObjectContext:self.managedObjectContext];
     [request setEntity:entity];
@@ -60,6 +58,26 @@ static SSDataManager *_sharedInstance = nil;
     }
     
     return [result lastObject];
+}
+
+-(BOOL)deleteFixedDate:(FixedDate *)fixedDate {
+    NSFetchRequest *request = [NSFetchRequest new];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"FixedDate" inManagedObjectContext:self.managedObjectContext];
+    [request setEntity:entity];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"identifier == %@", fixedDate.identifier];
+    [request setPredicate:predicate];
+    
+    NSError *error = nil;
+    NSArray *result = [self.managedObjectContext executeFetchRequest:request error:&error];
+    if (!result) {
+        NSLog(@"executeFetchRequest: failed, %@", [error localizedDescription]);
+        
+        return NO;
+    }
+    FixedDate *deleteObject = [result lastObject];
+    [self.managedObjectContext deleteObject:deleteObject];
+    [self save];
+    return YES;
 }
 
 -(void)save {
@@ -78,12 +96,14 @@ static SSDataManager *_sharedInstance = nil;
     if (_managedObjectContext != nil) {
         return _managedObjectContext;
     }
+
+    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinatorWithIsFirstBlock:nil];
     
-    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (coordinator != nil) {
         _managedObjectContext = [[NSManagedObjectContext alloc] init];
         [_managedObjectContext setPersistentStoreCoordinator:coordinator];
     }
+    
     return _managedObjectContext;
 }
 
@@ -94,20 +114,20 @@ static SSDataManager *_sharedInstance = nil;
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"FixedDateModel" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"FixedDate" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
 
 // Returns the persistent store coordinator for the application.
 // If the coordinator doesn't already exist, it is created and the application's store added to it.
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinatorWithIsFirstBlock:(void(^)(BOOL isFirst))isFirstBlock
 {
     if (_persistentStoreCoordinator != nil) {
         return _persistentStoreCoordinator;
     }
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"CoreDataSample.sqlite"];
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"FixedDate.sqlite"];
     
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
