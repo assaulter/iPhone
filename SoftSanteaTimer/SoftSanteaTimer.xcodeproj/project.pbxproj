@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		360D8FE317E9A647000FB405 /* small_one.png in Resources */ = {isa = PBXBuildFile; fileRef = 360D8FE017E9A647000FB405 /* small_one.png */; };
+		360D8FE417E9A647000FB405 /* small_three.png in Resources */ = {isa = PBXBuildFile; fileRef = 360D8FE117E9A647000FB405 /* small_three.png */; };
+		360D8FE517E9A647000FB405 /* small_two.png in Resources */ = {isa = PBXBuildFile; fileRef = 360D8FE217E9A647000FB405 /* small_two.png */; };
 		3623423017E58E7D00460B56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8616DD517E4B9B800DAAAAB /* Foundation.framework */; };
 		3623423117E58E7D00460B56 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8616DD717E4B9B800DAAAAB /* CoreGraphics.framework */; };
 		3623423217E58E7D00460B56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8616DD917E4B9B800DAAAAB /* UIKit.framework */; };
@@ -59,6 +62,9 @@
 
 /* Begin PBXFileReference section */
 		125A435CAEE04CC99122892D /* Pods-GHUnit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHUnit.xcconfig"; path = "Pods/Pods-GHUnit.xcconfig"; sourceTree = "<group>"; };
+		360D8FE017E9A647000FB405 /* small_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_one.png; sourceTree = "<group>"; };
+		360D8FE117E9A647000FB405 /* small_three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_three.png; sourceTree = "<group>"; };
+		360D8FE217E9A647000FB405 /* small_two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_two.png; sourceTree = "<group>"; };
 		3623422F17E58E7D00460B56 /* GHUnit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHUnit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3623423517E58E7D00460B56 /* GHUnit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GHUnit-Info.plist"; sourceTree = "<group>"; };
 		3623423917E58E7D00460B56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -144,6 +150,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		360D8FDE17E9A621000FB405 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				360D8FDF17E9A62E000FB405 /* GuideImage */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		360D8FDF17E9A62E000FB405 /* GuideImage */ = {
+			isa = PBXGroup;
+			children = (
+				360D8FE017E9A647000FB405 /* small_one.png */,
+				360D8FE117E9A647000FB405 /* small_three.png */,
+				360D8FE217E9A647000FB405 /* small_two.png */,
+			);
+			name = GuideImage;
+			sourceTree = "<group>";
+		};
 		3623423317E58E7D00460B56 /* GHUnit */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +220,7 @@
 		A8616DC917E4B9B800DAAAAB = {
 			isa = PBXGroup;
 			children = (
+				360D8FDE17E9A621000FB405 /* Resources */,
 				A8616DDB17E4B9B800DAAAAB /* SoftSanteaTimer */,
 				3623423317E58E7D00460B56 /* GHUnit */,
 				A8616DD417E4B9B800DAAAAB /* Frameworks */,
@@ -371,8 +396,11 @@
 			files = (
 				36D5210817E70A1600F1D664 /* PageContentIntialData.plist in Resources */,
 				A8616E1B17E5359600DAAAAB /* Memo.txt in Resources */,
+				360D8FE517E9A647000FB405 /* small_two.png in Resources */,
 				A8616DEE17E4B9B800DAAAAB /* Images.xcassets in Resources */,
 				A8616DE017E4B9B800DAAAAB /* InfoPlist.strings in Resources */,
+				360D8FE417E9A647000FB405 /* small_three.png in Resources */,
+				360D8FE317E9A647000FB405 /* small_one.png in Resources */,
 				A8616DE917E4B9B800DAAAAB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

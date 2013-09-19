@@ -8,7 +8,23 @@
 		<key>isLastPage</key>
 		<integer>0</integer>
 		<key>imageUrl</key>
-		<string>page1.png</string>
+		<string>small_one.png</string>
+	</dict>
+	<dict>
+		<key>pageNumber</key>
+		<integer>1</integer>
+		<key>isLastPage</key>
+		<integer>0</integer>
+		<key>imageUrl</key>
+		<string>small_two.png</string>
+	</dict>
+	<dict>
+		<key>pageNumber</key>
+		<integer>2</integer>
+		<key>isLastPage</key>
+		<integer>1</integer>
+		<key>imageUrl</key>
+		<string>small_three.png</string>
 	</dict>
 </array>
 </plist>

@@ -22,8 +22,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.title = @"TopView";
-    _manager = [PageContentDataManager sharedInstance];
-    NSManagedObjectContext *context = _manager.managedObjectContext;
 }
 
 - (void)didReceiveMemoryWarning

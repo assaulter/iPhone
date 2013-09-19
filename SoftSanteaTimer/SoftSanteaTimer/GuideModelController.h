@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ContentViewController.h"
 
 @interface GuideModelController : NSObject<UIPageViewControllerDataSource>
+
+- (ContentViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
+- (NSUInteger)indexOfViewController:(ContentViewController *)viewController;
 
 @end

@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PageContent.h"
+
+@protocol  ContentViewControllerDelegate<NSObject>
+
+-(void)pressedDismissButton;
+
+@end
 
 @interface ContentViewController : UIViewController
+
+@property(weak, nonatomic) IBOutlet UIImageView *imageView;
+@property(strong, nonatomic) PageContent *content;
 
 @end

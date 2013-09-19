@@ -27,6 +27,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    UIImage *image = [UIImage imageNamed:self.content.imageUrl];
+    self.imageView.image = image;
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -10,6 +10,7 @@
 
 @interface GuideViewController : UIViewController<UIPageViewControllerDelegate>
 
+// 公開しなくてもいいんだったらmファイルの方に移動する
 @property(nonatomic, strong) UIPageViewController *pageViewController;
 
 @end
